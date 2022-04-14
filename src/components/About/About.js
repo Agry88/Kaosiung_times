@@ -9,7 +9,7 @@ class About extends Component {
             <section className="page-section bg-light">
                 <div className="about">
                     <h1>
-                        關於我們2
+                        關於我們
                     </h1>
                 </div>
                 <div className="about">
