@@ -1,0 +1,95 @@
+.Sidebar{
+    display: grid;
+    position: fixed;
+    margin: auto;
+    transform: translate(-8%,50%)
+}
+
+/* .SidebarMenu{
+    position: fixed;
+    left: 0;
+    top: 0.5rem;
+} */
+
+.SidebarMenu{
+    position: static;
+    padding-top: 12px;
+    margin: 0;
+}
+
+.btn-dark{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.btn-primary2{
+    /* margin-top: 0.2px; */
+    background-color: #ffc800;
+}
+
+.input-group2{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+}
+
+.navbar-container{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.navbar{
+    justify-content: space-around;
+    height: 75px;
+}
+
+.btn-more{
+    margin-top: 6rem;
+}
+
+.img-resize{
+    margin: auto;
+    width: 100%;
+    height: 312px;
+}
+
+.timeline-words h4{
+    padding-top: 10px;
+}
+
+.MainContent{
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    background-color: gray;
+}
+
+.masthead-subheading{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 5rem;
+}
+
+.cos_title{
+    position: relative;
+    padding-top: 30px;
+    left: 30%;
+}
+
+.cos_item{
+    position: relative;
+    top: auto;
+    left: 30%;
+    padding-bottom: 20px;
+}
+
+.organ_img{
+    position: relative;
+    top: auto;
+    left: 30%;
+}
+
+.about{
+    position: relative;
+    top: auto;
+    left: 20%;
+}
