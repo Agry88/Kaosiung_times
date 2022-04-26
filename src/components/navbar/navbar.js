@@ -1,16 +1,25 @@
 import React, { Component } from 'react'
 class Navbar extends Component {
+    constructor(props) {
+        super(props);
+    }
+    state = { 
+        Userwidth:window.innerWidth,
+     }
+     timer_resize=setInterval(() => {
+         const newWidth = window.innerWidth;
+         this.setState({ Userwidth: newWidth });
+    }, 500);
+     
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
                 <div className="container navbar-container">
                     <div className="SidebarMenu">
-                        <p>
                             <button className="btn btn-dark" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="SidebarMenu">
                                 <i className="fas fa-bars"></i>
                             </button>
-                        </p>
                     </div>
 
                     <a className="navbar-brand" href="#page-top">社團法人高雄市時代科技學術研究協會</a>
@@ -26,6 +35,7 @@ class Navbar extends Component {
                             <li className="nav-item"><a className="nav-link" href="#contact" onClick={() =>this.props.Switch_page("")}>聯絡我們</a></li>
                         </ul>
                     </div>
+                    {this.state.Userwidth<1000?"":
                     <div className="input-group2">
                         <div className="form-outline">
                             <input type="search" id="form1" className="form-control" placeholder="搜尋..." />
@@ -34,6 +44,7 @@ class Navbar extends Component {
                             <i className="fas fa-search"></i>
                         </button>
                     </div>
+                    }
                 </div>
             </nav>
         );
@@ -41,3 +52,4 @@ class Navbar extends Component {
 }
 
 export default Navbar;
+

@@ -5,6 +5,7 @@ import Organization from './Organization/Organization';
 import About from './About/About';
 import Company from './Company/Company';
 import Reward from './Reward/Reward';
+import News_content from './News/News_content';
 
 class Contents extends Component {
     constructor(props) {
@@ -17,6 +18,10 @@ class Contents extends Component {
         switch (select_page) {
             case "News":
                 select_page = <News />
+                break;
+
+            case "News_content":
+                select_page = <News_content />
                 break;
             
             case "About":
@@ -41,7 +46,7 @@ class Contents extends Component {
                 break;
         }
         return (
-            <div>
+            <div id="Content">
                 {select_page}
             </div>
         );
